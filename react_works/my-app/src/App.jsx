@@ -7,6 +7,9 @@ import Header from './practice/Header'
 import Main from './practice/Main'
 import Footer from './practice/Footer'
 import Example03 from './components/Example03'
+import InputValue from './components/InputValue'
+import Test02 from './practice/Test02'
+import Dog from './components/Dog'
 
 function MyButton(){
   return (
@@ -30,12 +33,22 @@ function App() {
         {/* <Header />
         <Main />
         <Footer /> */}
+        <Dog
+          breed="말티즈"
+          age={2}
+          />
+          <Dog2
+          breed="진돗개"
+          age={5}
+          />
       </section>
 
       <section>
         {/* <h2>JSX 문법 배우기</h2> */}
         {/* <MyButton /> */}
-        <Example03 />
+        {/* <Example03 /> */}
+        {/* <InputValue /> */}
+        <Test02/>
       </section>
     </>
   )
