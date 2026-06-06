@@ -21,7 +21,6 @@ function App() {
         <Drink2 />
       </section>
 
-      
     </>
   )
 }

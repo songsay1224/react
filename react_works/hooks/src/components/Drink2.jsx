@@ -10,17 +10,21 @@ const Drink2 = () =>{
     //입력값 변경 함수
 
     const inputValueChange = (e) => {
+        console.log(e.target.value);
         setInputValue(e.target.value);
     }
 
     const addDrink = () => {
         const newDrink = inputValue;
+
+        if(newDrink == ''){
+        alert('음료 추가 눌러주세요')
+        
+}
         setDrinks([...drinks, newDrink]);
             //입력값 초기화
         setInputValue('');
     }
-
-  
 
     return (
 
